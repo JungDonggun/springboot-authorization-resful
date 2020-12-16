@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/server")
-public class ServerStatus {
+public class ServerStatusController {
     @GetMapping("/status")
     public ResponseEntity<Object> serverStatus() {
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>("success", HttpStatus.OK);
     }
 }
