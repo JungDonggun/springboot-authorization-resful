@@ -17,7 +17,7 @@ public class AuthorizationRequestBodyVo {
         return identity;
     }
 
-    public String password() {
+    public String getPassword() {
         return password;
     }
 
