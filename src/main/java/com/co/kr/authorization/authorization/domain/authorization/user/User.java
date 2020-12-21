@@ -26,15 +26,19 @@ public class User {
     private String address;
 
     @Column(nullable = false)
+    private String registerAt;
+
+    @Column(nullable = false)
     private Integer age;
 
 
     @Builder
-    User(String identity, String password, String nickname, String address, Integer age) {
+    User(String identity, String password, String nickname, String address, Integer age, String registerAt) {
         this.identity = identity;
         this.password = password;
         this.nickname = nickname;
         this.address = address;
+        this.registerAt = registerAt;
         this.age = age;
     }
 }
